@@ -331,7 +331,7 @@ main {
     flex-wrap: wrap;
   }
   .s-image{
-    height: 18vh;
+    height: 20vh;
   }
   .info, .c2-info{
     display: none;
