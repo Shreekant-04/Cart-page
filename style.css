@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  position: fixed;
+  top: 0;
+  background-color: rgba(128, 128, 128, 0.523);
+  backdrop-filter: blur(10px);
+  height: 8vmin;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+}
+
+nav {
+  height: 8vmin;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5vw;
+}
+.sidebar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+
+nav a:first-child {
+  margin-right: auto;
+}
+.user {
+  color: black;
+  margin-left: auto;
+}
+.close-btn,
+.menu-btn,
+#menu {
+  padding: 10px;
+  display: none;
+  cursor: pointer;
+}
+
+.close-btn {
+  margin-right: auto;
+}
+main {
+  width: 70%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+.card,
+.card-2 {
+  height: 100%;
+  width: 50%;
+  margin-top: 2%;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 2%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 2%;
+}
+.index {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1%;
+  font-size: 1vw;
+  margin-bottom: -5px;
+  align-self: center;
+  padding-left: 5px;
+}
+.index .price,
+.products .price {
+  margin-left: auto;
+}
+
+.cart-menu,
+.cust-info {
+  color: #000;
+  height: 50vmin;
+  width: 100%;
+  border-radius: 20px;
+  padding: 2%;
+  overflow: hidden;
+  box-shadow: 0 0 5px;
+}
+.cart-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-items::-webkit-scrollbar {
+  display: none;
+}
+.menu-items {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  overflow-y: scroll;
+  background-image: url(images/empty-cart.png);
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.products {
+  display: flex;
+  height: 3vmin;
+  justify-content: flex-start;
+  gap: 7%;
+  font-size: 1.2vw;
+}
+.products .price {
+  width: 30%;
+  text-align: end;
+}
+.total {
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 1.5vw;
+}
+.total p {
+  width: 50%;
+  text-align: end;
+}
+
+.cust-info h1 {
+  padding-bottom: 5px;
+}
+
+.info-form {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1%;
+  overflow: visible;
+}
+.info-form label {
+  height: 10vmin;
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2vw;
+  text-indent: 10px;
+}
+
+.info-form input {
+  height: 5vmin;
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  text-indent: 5%;
+  font-size: 1.1vw;
+
+  background-color: rgba(128, 128, 128, 0.274);
+}
+.submit-btn {
+  height: 7vmin;
+  width: 40%;
+  line-height: 7vmin;
+  align-self: center;
+  margin-right: 5%;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.2vw;
+  background-color: #124e78;
+  cursor: pointer;
+}
+.card-2 h1 {
+  align-self: flex-start;
+}
+
+.card-2 .info {
+  font-size: 1.2vw;
+  width: 80%;
+  align-self: flex-start;
+}
+.s-image {
+  height: 40vmin;
+  width: 90%;
+  height: 60%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.s-image div {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.service {
+  height: 6vmin;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.name-n-price {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 2%;
+}
+.service p {
+  font-size: 1.9vw;
+}
+.service-name {
+  width: 80%;
+}
+.service-price {
+  width: 30%;
+  text-align: end;
+  color: #124e78;
+  font-weight: 900;
+}
+.btns {
+  height: 6vmin;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.btns button {
+  width: 50%;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
+}
+.skip-btn {
+  background-color: #fff;
+  color: red;
+}
+.add-btn {
+  color: green;
+  background-color: rgba(0, 128, 0, 0.24);
+}
+.c2-info,
+.add-msg {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  align-self: flex-start;
+  font-size: 1vw;
+  gap: 1px;
+  margin-top: 1%;
+  padding: 5px;
+}
+.add-msg {
+  color: red;
+  position: fixed;
+  bottom: 6.6%;
+  justify-items: flex-start;
+  visibility: hidden;
+}
+
+@media (max-width: 430px) {
+  .close-btn,
+  .menu-btn {
+    display: block;
+  }
+  .sidebar {
+    height: 100vh;
+    width: 25vw;
+    background-color: rgba(128, 128, 128, 0.91);
+    backdrop-filter: blur(20%);
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: 1s;
+  }
+  .nav {
+    width: 100%;
+    border: 2px solid green;
+    background-color: aqua;
+  }
+  nav a {
+    font-size: 3.5vw;
+  }
+  #menu:checked ~ .sidebar {
+    right: 0;
+  }
+  main{
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 90%;
+    height: 95%;
+    margin-top: auto;
+    gap: 1px;
+  }
+  .card-2{
+    width: 100%;
+    height:40%;
+    margin-top: 0;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .s-image{
+    height: 18vh;
+  }
+  .info, .c2-info{
+    display: none;
+  }
+  .service p{
+    font-size: 4vw;
+  }
+  .card{
+    flex-direction: row;
+    height: 60%;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .card h1{
+    display: none;
+  }
+  .index{
+    width: 100%;
+    height: 5vmin;
+    font-size: 4vw;
+  }
+  .cart-menu,.cust-info{
+    height: 45%;
+  }
+  .cust-info form{
+    height: 100%;
+  }
+  .cust-info label{
+    font-size: 4.2vw;
+    height: 50%;
+    gap: 3%;
+    text-indent: 5px;
+
+  }
+  .cust-info  input{
+    height: 8vmin;
+    font-size: 3vw;
+  }
+  .cust-info button{
+    font-size: 3vw;
+    height: 8vmin;
+    margin-top: 2%;
+  }
+  .products, .total{
+    font-size: 4vw;
+  }
+
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="">Logo</a>
+        <input type="checkbox" name="menu" id="menu" />
+
+        <div class="sidebar">
+          <label for="menu" class="close-btn">
+            <span class="material-symbols-outlined" for="menu"> close </span>
+          </label>
+
+          <a href="" class="links">Home</a>
+          <a href="" class="links">Services</a>
+          <a href="" class="links">About Us</a>
+          <a href="" class="links">Contact Us</a>
+        </div>
+        <a href="" class="user">Username</a>
+        <label for="menu" class="menu-btn">
+          <span class="material-symbols-outlined"> menu </span>
+        </label>
+      </nav>
+    </header>
+    <main>
+      <sec class="card">
+        <h1>Added items</h1>
+        <div class="index">
+          <span>S.No</span><span>Service Name</span>
+          <span class="price">Price(Rs.)</span>
+        </div>
+        <div class="cart-menu">
+          <div class="menu-items"></div>
+
+          <div class="total">
+            <p>
+              <big><b>Total :</b></big>
+            </p>
+            <p class="total-amt"></p>
+          </div>
+        </div>
+        <div class="cust-info">
+          <h1>Book Now</h1>
+          <form action="#" class="info-form">
+            <label for="name"
+              >Full Name
+              <input type="text" id="name" required />
+            </label>
+
+            <label for="Email"
+              >Email
+              <input type="email" required />
+            </label>
+
+            <label for="phone"
+              >Phone No.
+              <input type="number" name="phone" id="number" />
+            </label>
+
+            <button type="submit" class="submit-btn">Book Now</button>
+            <div class="add-msg"></div>
+          </form>
+        </div>
+      </sec>
+
+      <sec class="card-2">
+        <h1>Browse Our Services</h1>
+        <p class="info">
+          Click on the add to cart button to add the services to your cart or
+          press skip
+        </p>
+
+        <div class="s-image"></div>
+        <div class="service"></div>
+        <div class="btns">
+          <button class="skip-btn">
+            Skip items
+            <span class="material-symbols-outlined"> do_not_disturb_on </span>
+          </button>
+          <button class="add-btn">
+            Add tems
+            <span class="material-symbols-outlined"> add_circle </span>
+          </button>
+        </div>
+        <h5 class="c2-info">
+          <span class="material-symbols-outlined size"> info </span>Add the
+          items to the cart and book now
+        </h5>
+      </sec>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
