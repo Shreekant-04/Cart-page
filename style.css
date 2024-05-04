@@ -378,5 +378,9 @@ main {
   .products, .total{
     font-size: 4vw;
   }
+  .card-2 h1 {
+    font-size: 6.5vw;
+    align-self: center;
+  }
 
 }
